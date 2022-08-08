@@ -19,7 +19,7 @@ Bugs:
 
 Technologies used 
     JavaScript, Html, CSS
-
+x`
 
 
 
