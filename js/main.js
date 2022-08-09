@@ -1,4 +1,102 @@
-alert("is this working");
+
+const colorGane = [
+    {
+        name: 'yellow',
+        //img
+    },
+    {
+        name: 'yellow'
+    },
+    {
+        name: 'red'
+    },
+    {
+        name: 'red'
+    },
+    {
+        name: 'blue'
+    },
+    {
+        name: 'blue'
+    },
+    {
+        name: 'green'
+    },
+    {
+        name: 'green'
+    },
+    {
+        name: 'black'
+    },
+    {
+        name: 'black'
+    },
+    {
+        name: 'purple'
+    },
+    {
+        name: 'purple'
+    }
+];
+ 
+const layout = document.getElementsByClassName('board');
+
+function makeBoard(){
+    
+}
+
+// alert("is this working");
+
+// // making varribales
+// const sounds = [
+//     {
+//         name: "bong",
+//         clip1: "soundFiles/bong.mp3",// audio pathing 
+//     },
+//     {
+//         name : "light Saber",
+//         clip2: "soundFiles/lightSaber.wav"
+//     },
+//     {
+//         name:"bark",
+//         clip3: "soundFiles/bark.wav"
+//     },
+//     {
+//         name: "wow",
+//         clip4: "soundFiles./wow.wav"
+//     },
+//     {
+//         name:"transformer",
+//         clip5: "soundFiles./transformer.wav",
+//     },
+//     {
+//         name: "fart",
+//         clip6,"soundFiles./fart.wav"
+//     },
+//     {
+//         name: "bong",
+//         clip7: "soundFiles/bong.mp3", 
+//     },
+//     {
+//         name : "light Saber",
+//         clip8: "soundFiles/lightSaber.wav"
+//     },
+//     {
+//         name:"bark",
+//         clip9: "soundFiles/bark.wav"
+//     },
+//     {
+//         name: "wow",
+//         clip10: "soundFiles./wow.wav"
+//     },
+//     {
+//         name:"transformer",
+//         clip11: "soundFiles./transformer.wav",
+//     },
+//     {
+//         name: "fart",
+//         clip12,"soundFiles./fart.wav"
+//     }];
 
 
 
