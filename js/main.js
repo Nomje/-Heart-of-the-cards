@@ -2,202 +2,155 @@
 const gameArray = [
     {
         name: 'yellow',
-        //img
+        img: "https://i.imgur.com/i3Ztlqvss.png"
     },
     {
-        name: 'yellow'
+        name: 'yellow',
+        img: "https://i.imgur.com/i3Ztlqvss.png"
+
     },
     {
-        name: 'red'
+        name: 'red',
+        img: "https://i.imgur.com/0TMOUV0s.jpeg"
+
     },
     {
-        name: 'red'
+        name: 'red',
+        img: "https://i.imgur.com/0TMOUV0s.jpeg"
     },
     {
-        name: 'blue'
+        name: 'blue',
+        img: "https://i.imgur.com/39vQwpns.jpeg"
     },
     {
-        name: 'blue'
+        name: 'blue',
+        img: 'https://i.imgur.com/39vQwpns.jpeg'
     },
     {
-        name: 'green'
+        name: 'green',
+        img: "https://i.imgur.com/tOEiEPAs.png"
     },
     {
-        name: 'green'
+        name: 'green',
+        img: "https://i.imgur.com/tOEiEPAs.png"
     },
     {
-        name: 'black'
+        name: 'black',
+        img: "https://i.imgur.com/5aBR7Rk.png"
     },
     {
-        name: 'black'
+        name: 'black',
+        img: "https://i.imgur.com/5aBR7Rk.png"
     },
     {
-        name: 'purple'
+        name: 'purple',
+        img: "https://i.imgur.com/vMC2osDs.jpeg"
     },
     {
-        name: 'purple'
+        name: 'purple',
+        img: "https://i.imgur.com/vMC2osDs.jpeg"
     }
 ];
- 
-let layout = document.querySelector('.board');
-let ping = document.querySelector('.ping');
-let reset = document.querySelector('.reset');
-let clicks = document.querySelector('.clicks');
-let imgs = 0;
-let objectIndx = [];
-let selected = [];
-let pairs = 0;
-let press = 0;
+let grid = document.querySelector(".grid");
+let audio = document.querySelector("audio")
+let source = document.querySelector("#source")
+let scoreBoard = document.querySelector(".scoreBoard"); 
+let popup = document.querySelector(".popup"); 
+let playAgain = document.querySelector(".playAgain"); 
+let clickBoard = document.querySelector(".clickBoard"); 
+let imgs; 
+let cardsId = []; 
+let cardsSelected = []; 
+let cardsWon = 0; 
+let clicks = 0;
+document.addEventListener("DOMContentLoaded", function () {
+//define functions 
 
-// functions ---->
+createBoard(grid, cardArray); 
+arrangeCard();
+playAgain.addEventListener("click", replay); 
 
-function makeBoard(){
+//add a click functions for images 
 
+imgs = document.querySelectorAll("img");
+Array.from(imgs).forEach(img => 
+img.addEventListener("click", flipCard)
+) 
+});
+//createBoard function
+
+function createBoard(grid, array) { 
+popup.style.display = "none"; 
+array.forEach((arr, index) => { 
+let img = document.createElement("img"); 
+img.setAttribute("src", "https://i.imgur.com/UjbK2Wb.png");
+img.setAttribute("data-id", index); 
+grid.appendChild(img); 
+})
 }
 
-// alert("is this working");
+// arrangeCard function
 
-// // making varribales
-// const sounds = [
-//     {
-//         name: "bong",
-//         clip1: "soundFiles/bong.mp3",// audio pathing 
-//     },
-//     {
-//         name : "light Saber",
-//         clip2: "soundFiles/lightSaber.wav"
-//     },
-//     {
-//         name:"bark",
-//         clip3: "soundFiles/bark.wav"
-//     },
-//     {
-//         name: "wow",
-//         clip4: "soundFiles./wow.wav"
-//     },
-//     {
-//         name:"transformer",
-//         clip5: "soundFiles./transformer.wav",
-//     },
-//     {
-//         name: "fart",
-//         clip6,"soundFiles./fart.wav"
-//     },
-//     {
-//         name: "bong",
-//         clip7: "soundFiles/bong.mp3", 
-//     },
-//     {
-//         name : "light Saber",
-//         clip8: "soundFiles/lightSaber.wav"
-//     },
-//     {
-//         name:"bark",
-//         clip9: "soundFiles/bark.wav"
-//     },
-//     {
-//         name: "wow",
-//         clip10: "soundFiles./wow.wav"
-//     },
-//     {
-//         name:"transformer",
-//         clip11: "soundFiles./transformer.wav",
-//     },
-//     {
-//         name: "fart",
-//         clip12,"soundFiles./fart.wav"
-//     }];
+function arrangeCard() { 
+cardArray.sort(() => 0.5 - Math.random())
+}
+
+// flip Card function
+
+function flipCard() { 
+let selected = this.dataset.id;
+  let clicked =cardArray[selected].name
+cardsSelected.push(clicked); 
 
 
-
-
-
-
-
-
-
-
-
-
-// const sounds = {
-//     pcFail: "soundFiles/bong.mp3",// audio pathing 
-//     lightSaber: "soundFiles/lightSaber.wav",
-//     dogBark: "soundFiles/bark.wav"
-//     wowSound: "soundFiles./wow.wav"
-//     fart: "soundFiles",
-//     trasformer,""
-// }
-
-
-// not working code // const audio = {
-// //         // assiagn the audio to buttons by giving the buttons name
-// //         bug: "soundFiles/critical-stop.mp3",
-// //         dog: 'http://www.freesound.org/data/previews/327/327666_5632380-lq.mp3',
-// //         cow: 'http://www.freesound.org/data/previews/58/58277_634166-lq.mp3',
-// //         siren: 'http://www.freesound.org/data/previews/336/336899_4939433-lq.mp3'
-// //     }
-// let turn = 0
-// const music = new Audio();
-// const bgPlayer = document.getElementById('bg-player');
-// document.getElementById('play-btn').addEventListener('click', handlePlaySound);
-
-
-// // function handlePlaySound() {
-// // const selSoundInp = document.querySelector('input[name="sound"]:checked');
-// // playSound(selSoundInp.value);
-// // }
-
-// // function playSound(name) {
-// //     music.src = sounds[name];
-// //     music.play();
-// //   }
-
-// //   function handleBgChanged() {
-// //     bgCheckbox.checked ? bgPlayer.play() : bgPlayer.pause();
-// //   }
   
-// function turnCounter (){
-//     turn ++;
-//     document.getElementById("click").innerHTML = turn;
-// }
+  
+cardsId.push(selected); 
+this.classList.add("flip"); 
+this.setAttribute("src", cardArray[selected].img); 
+if (cardsId.length === 2) { 
+setTimeout(checkForMatch, 500);
+} 
+}
+// checkForMatch function
 
-// // var sounds ={
-// //     clip1: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// //     clip2: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// //      clip3: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// //     clip4: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// //     clip5: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// //     clip6: Object.assign(document.createElement('audio'),{
-// //         src : '',
-// //     }),
-// // }
+function checkForMatch() { 
+let imgs = document.querySelectorAll("img"); 
+let firstCard = cardsId[0];
+let secondCard = cardsId[1];
+if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
+alert("you have found a match"); 
+ 
+ 
+cardsWon += 1; 
+scoreBoard.innerHTML = cardsWon; 
+setTimeout(checkWon,500) 
+} else { 
+imgs[firstCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png");
+imgs[secondCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png"); alert("wrong, please try again"); 
+  imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
+} 
+cardsSelected = []; 
+cardsId = []; 
+clicks += 1; 
+clickBoard.innerHTML = clicks; 
+}
+
+function checkWon() {
+if (cardsWon == cardArray.length / 2) {
+alert("You won") 
+setTimeout(()=> popup.style.display = "flex" ,300); 
+}
+}
 
 
-// //     let pairs = 0;
-// //     let audio1, audio2;
-// //     let turns = 0;
-
-// //     function pairFound (audio1, audio2){
-// //         if (audio1 === audio2){
-// //             //change back ground to certian color and diable the dom events on said buttons 
-// //         }
-// //         else {
-// //             // change the background to bad color and do nothing 
-// //         }
-// //     }
-
-// //     function shuffleAudio (){
-// //         pair = 0;
-// //         e
-// //     }
-
+function replay() { 
+arrangeCard(); 
+grid.innerHTML = "";
+createBoard(grid, cardArray);
+cardsWon = 0;
+clicks = 0; 
+clickBoard.innerHTML = 0; 
+scoreBoard.innerHTML = 0; 
+popup.style.display = "none"; 
+}
