@@ -9,10 +9,6 @@
     <script defer src="./js/main.js"></script>
 </head>
 <body>
-    <!-- <div class = "backSide">
-        <img src ="https://i.imgur.com/Zt7gRew.gif">
-    </div> -->
-
     <div class = "gameName">
         <h1>How Good are your Ears? </h1>
         <h6>An Audio Memory Game</h6>
@@ -38,10 +34,14 @@
     </div>
     
     <div class = "tally">
-        <h4> Turn Order</h4>
+        <h4> Turn Order: <a id = "click">0</a></h4>
     </div>
     <div class = "audipPlayer">
         <audio controls id="bg-player"  src="" loop>
     </div>
+
+    <button type="button" onClick="click()">Click me</button>
+    <p>Clicks: <a id="clicks">0</a></p>
+
 </body>
 </html>
