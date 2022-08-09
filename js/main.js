@@ -1,5 +1,5 @@
 
-const colorGane = [
+const gameArray = [
     {
         name: 'yellow',
         //img
@@ -39,10 +39,20 @@ const colorGane = [
     }
 ];
  
-const layout = document.getElementsByClassName('board');
+let layout = document.querySelector('.board');
+let ping = document.querySelector('.ping');
+let reset = document.querySelector('.reset');
+let clicks = document.querySelector('.clicks');
+let imgs = 0;
+let objectIndx = [];
+let selected = [];
+let pairs = 0;
+let press = 0;
+
+// functions ---->
 
 function makeBoard(){
-    
+
 }
 
 // alert("is this working");
