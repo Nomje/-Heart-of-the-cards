@@ -5,7 +5,7 @@ const gameArray = [
         img: "https://ygoprodeck.com/pics/10000010.jpg"
     },
     {
-        name: 'Winged-Dragon-of-Rayellow',
+        name: 'Winged-Dragon-of-Ra',
         img: "https://ygoprodeck.com/pics/10000010.jpg"
 
     },
@@ -19,7 +19,7 @@ const gameArray = [
         img: "https://ygoprodeck.com/pics/10000020.jpg"
     },
     {
-        name: 'blue-eyes-white dragon',
+        name: 'blue-eyes-white-dragon',
         img: "https://ygoprodeck.com/pics/89631139.jpg"
     },
     {
@@ -109,7 +109,7 @@ function createBoard(grid, array) {
 // arrangeCard function
 
 function arrangeCard() { 
-    gameArray.sort(() => 0.3 - Math.random());
+    gameArray.sort(() => 0.5 - Math.random());
 };
 
 // flip Card function
@@ -162,14 +162,5 @@ setTimeout(()=> popup.style.display = "flex" ,300);
 
 
 function replay() { 
-    // arrangeCard(); 
-    // grid.innerHTML = "";
-    // createBoard(grid, Array);
-    // cardsWon = 0;
-    // clicks = 0; 
-    // clickBoard.innerHTML = 0; 
-    // points.innerHTML = 0; 
-    // popup.style.display = "none"; 
-
     window.location.reload();
 }

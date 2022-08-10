@@ -1,0 +1,34 @@
+img{
+    height: 230px;
+    width: 150px;
+    margin: 2px; 
+    
+}
+
+h2,p{
+    text-align: center;
+    text-shadow: 50px;
+    color: rgb(193, 119, 14);
+}
+
+
+.grid { 
+    width: 90%; 
+    height: 300px; 
+    display: flex; 
+    flex-wrap: wrap; 
+    margin: 60px auto; 
+} 
+
+.data { 
+     display: flex; 
+    justify-content: space-between; 
+    padding: 20px 30px; 
+    font-size: 23px; 
+    color: rgb(193, 119, 14);
+} 
+
+body{
+    background: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a44d0206-0e67-40ce-9420-e9b21ed021fa/db7z5vb-d52d226d-f984-4345-bb1e-e30fb8de9717.png/v1/fill/w_1191,h_671,q_70,strp/yugi_muto__yu_gi_oh___minimalist_by_darkfate17_db7z5vb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MSIsInBhdGgiOiJcL2ZcL2E0NGQwMjA2LTBlNjctNDBjZS05NDIwLWU5YjIxZWQwMjFmYVwvZGI3ejV2Yi1kNTJkMjI2ZC1mOTg0LTQzNDUtYmIxZS1lMzBmYjhkZTk3MTcucG5nIiwid2lkdGgiOiI8PTM4MzIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LF_--gg07BUeSUyKmCfYuI5HPg7iy98uEEOfFqu_h1Y";
+}
+   
