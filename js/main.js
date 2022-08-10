@@ -1,55 +1,72 @@
 
 const gameArray = [
     {
-        name: 'yellow',
-        img: "https://i.imgur.com/i3Ztlqvs.png"
+        name: 'Winged-Dragon-of-Ra',
+        img: "https://ygoprodeck.com/pics/10000010.jpg"
     },
     {
-        name: 'yellow',
-        img: "https://i.imgur.com/i3Ztlqvs.png"
+        name: 'Winged-Dragon-of-Rayellow',
+        img: "https://ygoprodeck.com/pics/10000010.jpg"
 
     },
     {
-        name: 'red',
-        img: "https://i.imgur.com/0TMOUV0.jpeg"
+        name: 'Slifer-the-sky-Dragon',
+        img: "https://ygoprodeck.com/pics/10000020.jpg"
 
     },
     {
-        name: 'red',
-        img: "https://i.imgur.com/0TMOUV0.jpeg"
+        name: 'Slifer-the-sky-Dragon',
+        img: "https://ygoprodeck.com/pics/10000020.jpg"
     },
     {
-        name: 'blue',
-        img: "https://i.imgur.com/39vQwpn.jpeg"
+        name: 'blue-eyes-white dragon',
+        img: "https://ygoprodeck.com/pics/89631139.jpg"
     },
     {
-        name: 'blue',
-        img: 'https://i.imgur.com/39vQwpn.jpeg'
+        name: 'blue-eyes-white-dragon',
+        img: 'https://ygoprodeck.com/pics/89631139.jpg'
     },
     {
-        name: 'green',
-        img: "https://i.imgur.com/tOEiEPA.png"
+        name: 'Ascension-Sky-Dragon',
+        img: "https://ygoprodeck.com/pics/37910722.jpg"
     },
     {
-        name: 'green',
-        img: "https://i.imgur.com/tOEiEPA.spng"  
+        name: 'Ascension-Sky-Dragon',
+        img: "https://ygoprodeck.com/pics/37910722.jpg"  
     },
     {
-        name: 'black',
-        img: "https://i.imgur.com/5aBR7Rk.png"
+        name: 'dark-hole',
+        img: "https://ygoprodeck.com/pics/53129443.jpg"
     },
     {
-        name: 'black',
-        img: "https://i.imgur.com/5aBR7Rk.png"
+        name: 'dark-hole',
+        img: "https://ygoprodeck.com/pics/53129443.jpg"
     },
     {
-        name: 'purple',
-        img: "https://i.imgur.com/vMC2osD.jpeg"
+        name: 'dark-magician',
+        img: "https://ygoprodeck.com/pics/46986414.jpg"
     },
     {
-        name: 'purple',
-        img: "https://i.imgur.com/vMC2osD.jpeg"
-    }
+        name: 'dark-magician',
+        img: "https://ygoprodeck.com/pics/46986414.jpg"
+    },
+    {
+        name:"monster-reborn",
+        img:"https://ygoprodeck.com/pics/83764719.jpg"
+    },
+    {
+        name:"monster-reborn",
+        img:"https://ygoprodeck.com/pics/83764719.jpg"
+    },
+    {
+        name:"obelisk-the-tormentor",
+        img:"https://ygoprodeck.com/pics/10000000.jpg"
+    },
+    {
+        name:"obelisk-the-tormentor",
+        img:"https://ygoprodeck.com/pics/10000000.jpg"
+    },
+
 ];
 let grid = document.querySelector(".grid");
 let audio = document.querySelector("audio")
