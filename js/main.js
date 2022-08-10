@@ -32,7 +32,7 @@ const gameArray = [
     },
     {
         name: 'green',
-        img: "https://i.imgur.com/tOEiEPA.png"
+        img: "https://i.imgur.com/tOEiEPA.spng"  
     },
     {
         name: 'black',
