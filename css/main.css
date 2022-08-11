@@ -28,10 +28,11 @@ h2,p{
     justify-content: space-between; 
     padding: 20px 30px; 
     font-size: 23px; 
-    color: rgb(193, 119, 14);
+    color: rgb(125, 90, 219);
 } 
 
 body{
-    background: "https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/a44d0206-0e67-40ce-9420-e9b21ed021fa/db7z5vb-d52d226d-f984-4345-bb1e-e30fb8de9717.png/v1/fill/w_1191,h_671,q_70,strp/yugi_muto__yu_gi_oh___minimalist_by_darkfate17_db7z5vb-pre.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9MjE2MSIsInBhdGgiOiJcL2ZcL2E0NGQwMjA2LTBlNjctNDBjZS05NDIwLWU5YjIxZWQwMjFmYVwvZGI3ejV2Yi1kNTJkMjI2ZC1mOTg0LTQzNDUtYmIxZS1lMzBmYjhkZTk3MTcucG5nIiwid2lkdGgiOiI8PTM4MzIifV1dLCJhdWQiOlsidXJuOnNlcnZpY2U6aW1hZ2Uub3BlcmF0aW9ucyJdfQ.LF_--gg07BUeSUyKmCfYuI5HPg7iy98uEEOfFqu_h1Y";
+    background: url("https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/49221336-8f7e-4184-9854-c26cc4b8c67f/ddf7h7j-de5beacd-f807-41eb-b078-a7d4293e5275.jpg/v1/fill/w_1024,h_586,q_75,strp/gods_among_us_by_jsraphael57_ddf7h7j-fullview.jpg?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7ImhlaWdodCI6Ijw9NTg2IiwicGF0aCI6IlwvZlwvNDkyMjEzMzYtOGY3ZS00MTg0LTk4NTQtYzI2Y2M0YjhjNjdmXC9kZGY3aDdqLWRlNWJlYWNkLWY4MDctNDFlYi1iMDc4LWE3ZDQyOTNlNTI3NS5qcGciLCJ3aWR0aCI6Ijw9MTAyNCJ9XV0sImF1ZCI6WyJ1cm46c2VydmljZTppbWFnZS5vcGVyYXRpb25zIl19.BEooErhutldBmFR90Oca7C0dWKPuCjeL0vOPW5RcG_c");
+    background-size: 100%;
 }
    
