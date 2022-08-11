@@ -90,10 +90,7 @@ reset.addEventListener("click", replay);
 //add a click functions for images 
 
 imgs = document.querySelectorAll("img");
-Array.from(imgs).forEach(img => 
-img.addEventListener("click", flipCard)
-) 
-});
+Array.from(imgs).forEach(img => img.addEventListener("click", flipCard)) });
 //createBoard function
 
 function createBoard(grid, array) { 
@@ -115,49 +112,44 @@ function arrangeCard() {
 // flip Card function
 
 function flipCard() { 
-let selected = this.dataset.id;
-  let clicked =gameArray[selected].name
-cardsSelected.push(clicked); 
-
-
-  
-  
-cardsId.push(selected); 
-this.classList.add("flip"); 
-this.setAttribute("src", gameArray[selected].img); 
-if (cardsId.length === 2) { 
-setTimeout(checkForMatch, 100);
-} 
+    let selected = this.dataset.id;
+    let clicked =gameArray[selected].name
+    cardsSelected.push(clicked); 
+    cardsId.push(selected); 
+    this.classList.add("flip"); 
+    this.setAttribute("src", gameArray[selected].img); 
+    if (cardsId.length === 2) { 
+        setTimeout(checkForMatch, 100);
+    } 
 }
 // checkForMatch function
 
 function checkForMatch() { 
-let imgs = document.querySelectorAll("img"); 
-let firstCard = cardsId[0];
-let secondCard = cardsId[1];
-if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
-alert("you have found a match"); 
- 
- 
-cardsWon ++; 
-points.innerHTML = cardsWon; 
-setTimeout(checkWon,500) 
-} else { 
-imgs[firstCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png");
-imgs[secondCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png"); alert("wrong, please try again"); 
-  imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
-} 
-cardsSelected = []; 
-cardsId = []; 
-clicks ++; 
-clickBoard.innerHTML = clicks; 
+    let imgs = document.querySelectorAll("img"); 
+    let firstCard = cardsId[0];
+    let secondCard = cardsId[1];
+    if (cardsSelected[0] === cardsSelected[1] && firstCard !== secondCard) { 
+        alert("you have found a match"); 
+        cardsWon ++; 
+        points.innerHTML = cardsWon; 
+        setTimeout(checkWon,100);
+    }
+    else { 
+        imgs[firstCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png");
+        imgs[secondCard].setAttribute("src", "https://i.imgur.com/UjbK2Wb.png"); alert("wrong, please try again"); 
+        imgs[firstCard].classList.remove("flip"); imgs[secondCard].classList.remove("flip"); 
+        } 
+    cardsSelected = []; 
+    cardsId = []; 
+    clicks ++; 
+    clickBoard.innerHTML = clicks; 
 }
 
 function checkWon() {
-if (cardsWon == gameArray.length / 2) {
-alert("You won") 
-setTimeout(()=> popup.style.display = "flex" ,300); 
-}
+    if (cardsWon == gameArray.length / 2) {
+        alert("You won") 
+        setTimeout(()=> popup.style.display = "flex" ,300); 
+    }
 }
 
 
