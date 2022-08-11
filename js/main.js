@@ -1,4 +1,4 @@
-
+//declaring objects and other variables 
 const gameArray = [
     {
         name: 'Winged-Dragon-of-Ra',
@@ -145,6 +145,8 @@ function checkForMatch() {
     clickBoard.innerHTML = clicks; 
 }
 
+//checkWon Function
+
 function checkWon() {
     if (cardsWon == gameArray.length / 2) {
         alert("You won") 
@@ -152,6 +154,7 @@ function checkWon() {
     }
 }
 
+// replay fucntion
 
 function replay() { 
     window.location.reload();
