@@ -6,7 +6,7 @@ Instructions/ how to play the game:
     Layed out before you are 16 cards find the correct pairs to win. Try to use as few clicks as possible to find the correct 8 pairs of cards. You well be propted when the game is won as well as when a pair is found or not. 
 
 Game Summary
-    Using the 
+    Player is Tasked into finding 8 pairs of yugioh cards to when the game. WHile doing the task thee program records clicks used on cards and will infrom the player if a match is found. Once the the 8 pairs are found then the player has the option either to stop playing or they can reset the game by a click of a button.
 
 Future developments:
     add audio for card flips 
