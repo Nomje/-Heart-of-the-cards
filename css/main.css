@@ -8,8 +8,7 @@ img{
 h2,p{
     text-align: center;
     text-shadow: 50px;
-    /* color: rgb(193, 119, 14); */
-    color: #38BEAC;
+    color:#87175E;
     margin: 0px;
     padding: 0px;
 
@@ -29,14 +28,7 @@ h2,p{
     justify-content: space-between; 
     padding: 20px 30px; 
     font-size: 23px; 
-    /* color: #510200;  works on left side not on right side */
-    /* color: #734C81; pleands in to much cant see  */
-    /* color: #2F4858;  get reid of */
-    /* color: #C44747; */
-    color: #38BEAC;
-    color: #F334AF;
-    color:#87175E;
-    color: #EC992A;
+    color: #4EF1FF;
 } 
 
 body{
