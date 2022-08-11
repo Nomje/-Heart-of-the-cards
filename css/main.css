@@ -28,7 +28,14 @@ h2,p{
     justify-content: space-between; 
     padding: 20px 30px; 
     font-size: 23px; 
-    color: #510200;
+    /* color: #510200;  works on left side not on right side */
+    /* color: #734C81; pleands in to much cant see  */
+    /* color: #2F4858;  get reid of */
+    /* color: #C44747; */
+    color: #38BEAC;
+    color: #F334AF;
+    color:#87175E;
+    color: #EC992A;
 } 
 
 body{
@@ -36,3 +43,11 @@ body{
     background-size: 100%;
 }
    
+.reset{
+    display: flex;
+    align-self: center;
+    padding: 0px;
+    margin: 0px;
+   
+
+}

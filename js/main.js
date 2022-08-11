@@ -109,7 +109,7 @@ function createBoard(grid, array) {
 // arrangeCard function
 
 function arrangeCard() { 
-    gameArray.sort(() => 0.5 - Math.random());
+    gameArray.sort(() => 0.6 - Math.random());
 };
 
 // flip Card function
@@ -126,7 +126,7 @@ cardsId.push(selected);
 this.classList.add("flip"); 
 this.setAttribute("src", gameArray[selected].img); 
 if (cardsId.length === 2) { 
-setTimeout(checkForMatch, 500);
+setTimeout(checkForMatch, 100);
 } 
 }
 // checkForMatch function
