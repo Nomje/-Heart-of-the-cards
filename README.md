@@ -26,4 +26,5 @@ Technologies used
 
 
 
-
+webpage for the game:
+    https://navjeet.netlify.app/
