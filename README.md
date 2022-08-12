@@ -45,4 +45,4 @@ What Went well
 
 webpage for the game:
 
-    https://navjeet.netlify.app/
+   [link](https://navjeet.netlify.app/)
