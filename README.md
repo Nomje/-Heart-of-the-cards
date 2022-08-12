@@ -18,7 +18,6 @@ Future developments:
     adjust placement of play agian button 
 
 ScreenShots:
-
     I have linked an imgur album to pictures of the game being played.
     https://imgur.com/a/2WTROjR
 
