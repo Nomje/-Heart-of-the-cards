@@ -37,7 +37,7 @@ Approach taken
 
     Project Structure
 
-        The way the code starts is that tthe webpage is loaded with the back of cards facing the player then we have fuctions to cflip a card and show the assign face up card given. form there the app takes a click event on two cards and checks if you have a pair or not. With the check for a pair we have a function to see if the values between the cards match and if so it well then give an alert to infrom you got a pair or that the cards dont match. as your playing the code has a fuctio to see if you have no remaining pairs if so then the reset button well appear and alert the player you have won.
+        >The way the code starts is that tthe webpage is loaded with the back of cards facing the player then we have fuctions to cflip a card and show the assign face up card given. form there the app takes a click event on two cards and checks if you have a pair or not. With the check for a pair we have a function to see if the values between the cards match and if so it well then give an alert to infrom you got a pair or that the cards dont match. as your playing the code has a fuctio to see if you have no remaining pairs if so then the reset button well appear and alert the player you have won.
 
 What Went well 
 
@@ -45,4 +45,4 @@ What Went well
 
 webpage for the game:
 
-   [link](https://navjeet.netlify.app/)
+   [Lets play!](https://navjeet.netlify.app/)
