@@ -106,7 +106,7 @@ function createBoard(grid, array) {
 // arrangeCard function
 
 function arrangeCard() { 
-    gameArray.sort(() => 0.2 - Math.random());
+    gameArray.sort(() => 0.5 - Math.random());
 };
 
 // flip Card function
