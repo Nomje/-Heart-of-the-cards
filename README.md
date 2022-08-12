@@ -24,7 +24,16 @@ Bugs:
 Technologies used 
     JavaScript, Html, CSS
 
+Approach taken
 
+    Wireframe
+        -a wireframe was developed on whimsical showing general structure of the website plus a flow chart of the basic approach to how the game was supposed to be made.
+
+    Project Structure
+        The way the code starts is that tthe webpage is loaded with the back of cards facing the player then we have fuctions to cflip a card and show the assign face up card given. form there the app takes a click event on two cards and checks if you have a pair or not. With the check for a pair we have a function to see if the values between the cards match and if so it well then give an alert to infrom you got a pair or that the cards dont match. as your playing the code has a fuctio to see if you have no remaining pairs if so then the reset button well appear and alert the player you have won.
+
+What Went well 
+    getting it so that the back side of the cards showing was the hardest but the most fuflling section og the app. 
 
 webpage for the game:
     https://navjeet.netlify.app/
